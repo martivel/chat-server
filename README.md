@@ -1,2 +1,2 @@
 # chat-server
-echo # chat-client
+A server providing websocket connections build in GO.
