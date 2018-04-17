@@ -19,10 +19,9 @@ func main() {
 	hub := newHub()
 
 	// Routing
-	fs := http.FileServer(http.Dir("public"))
-	http.Handle("/", fs)
 	http.Handle("/ws", newWSConnection(hub))
 
+	// Watching for messages
 	go hub.handleMessages()
 
 	// Starting the server
