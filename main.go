@@ -11,7 +11,7 @@ func main() {
 	// Can also be parsed while building/deploying the app
 	var url, port string
 	flag.StringVar(&url, "url", "localhost", "URL")
-	flag.StringVar(&port, "port", ":8080", "Port")
+	flag.StringVar(&port, "port", ":9000", "Port")
 	flag.Parse()
 
 	// Setting up the hub & setup
