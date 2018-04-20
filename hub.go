@@ -18,7 +18,6 @@ type Hub struct {
 // Define the message object. This is how the broadcast messages will look like
 // These are filled via the client side
 type Message struct {
-	Email    string `json:"email"`
 	Username string `json:"username"`
 	Message  string `json:"message"`
 }

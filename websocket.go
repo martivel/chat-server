@@ -24,7 +24,7 @@ var clients = make(map[*websocket.Conn]bool)
 var broadcast = make(chan Message)
 
 // Making an struct that will inherit the Handler interface via
-// the method pointer ServeHTTP
+// the function pointer ServeHTTP
 type Websocket struct {
 	Hub *Hub
 }
